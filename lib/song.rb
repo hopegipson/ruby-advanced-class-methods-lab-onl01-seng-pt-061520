@@ -34,7 +34,9 @@ class Song
     
   end
   
-  def 
+  def Song.find_or_create_by_name
+    
+  end
 
   
 
