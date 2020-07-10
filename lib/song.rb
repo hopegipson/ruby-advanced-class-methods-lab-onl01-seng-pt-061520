@@ -43,7 +43,7 @@ class Song
   end
   
   def Song.new_from_filename(namestring)
-      namestring.split "-".collect{|w|}
+      namestring.split "-".
       
       self.all.each do |person|
       person.name = person.name.split(" ").collect{|w| w.capitalize}.join(" ")
