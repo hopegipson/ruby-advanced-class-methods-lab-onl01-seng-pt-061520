@@ -42,11 +42,11 @@ class Song
     self.all.sort_by{|song| song.name}
   end
   
-  def Song.new_from_filename(namestring)
-      namestring.split "-".
-      
-      self.all.each do |person|
-      person.name = person.name.split(" ").collect{|w| w.capitalize}.join(" ")
+  def Song.new_from_filename(name)
+    song = self.new 
+    song.name = (name.split(" - ")[1].chomp(".mp3"))
+    song.artist_name = (name.split(" - ")[0])
+    song      
   end
 
 end
